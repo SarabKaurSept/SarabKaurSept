@@ -236,6 +236,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   float: left;
   position: relative;
+  background-image:url('../us/bg2.jpg');
 }
 
 .fh5co-video {
@@ -296,11 +297,12 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-cover {
-  height: 900px;
+  height: 1000px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
+  background-image:url('../us/mainbg.jpg');
 }
 .fh5co-cover .overlay {
   z-index: 0;
@@ -317,7 +319,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    height: 600px;
+    /* height: 600px;
+    background-position: 0px 0px !important; */
+    height: 402px;
+    background-position: -110px 0px !important;
+    background-image:url('../us/bg2.jpg');
   }
 }
 .fh5co-cover .display-t,
@@ -1019,6 +1025,13 @@ form label {
   #fh5co-gallery,
   .fh5co-section {
     padding: 3em 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fh5co-bg{
+    background-image:url('../us/mainbg.jpg');
+    background-position: -260px 0 !important;
   }
 }
 
@@ -1848,3 +1861,6 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+.simply-seconds-section{
+  display: none !important;
+}
